@@ -1,3 +1,8 @@
+/*Programming Assignment 1
+*Author: Ang Xuan Yin Joel
+*ID: 1001075
+*Date: 12/03/16 */
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -53,7 +58,7 @@ public class processmgt {
 		}catch (IOException e){
 			System.out.println("Error: File '"+filename+"' not found! Please run the program again.");	//filename arg[0] is an invalid file (does not exist)
 
-		}catch (IndexOutOfBoundsException e){
+		}catch (IndexOutOfBoundsException e){		//catches error if lines in file do not follow the standard format
 			System.out.println("Error: Content of file containing process graph has a formatting error! Program has ended.");
 			
 		}catch (Exception e){
